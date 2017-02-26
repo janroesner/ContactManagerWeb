@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react'
-import Gender from '../Gender'
+import { Gender } from '../'
 import styles from './styles'
 
 const Contact = ({firstName, lastName, age, gender}) => {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Contact from '../Contact'
+import { Contact } from '../'
 import styles from './styles'
 
 export default class ContactsList extends Component {

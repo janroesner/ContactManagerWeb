@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import ContactForm from '../../components/ContactForm'
-import ContactsList from '../../components/ContactsList'
+import { ContactForm } from '../../components'
+import { ContactsList } from '../../components'
 import initialData from './data'
 
 export default class ContactsContainer extends Component {

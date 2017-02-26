@@ -5,6 +5,8 @@ const styles = {
     left: 0,
     margin: '20px auto',
     maxWidth: '50%',
+    paddingBottom: '50px',
+    position: 'relative',
     right: 0,
   },
   textInput: {
@@ -18,24 +20,25 @@ const styles = {
   genderInput: {
     color: 'light-gray',
     fontSize: '12px',
-    margin: '30px 40px',
+    margin: '30px 55px',
   },
   selectInput: {
     backgroundColor: 'white',
     border: 'none',
     fontSize: '18px',
-    height: '60px',
+    height: '30px',
     width: '60px',
   },
   button: {
     backgroundColor: 'orange',
     border: 'none',
+    bottom: 0,
     color: 'white',
     fontSize: '14px',
     fontWeight: 'bold',
-    left: '325px',
     padding: '10px 40px',
-    position: 'relative',
+    position: 'absolute',
+    right: 0,
   }
 }
 
@@ -77,7 +80,6 @@ export default class ContactForm extends Component {
         </span>
         <br />
         <button style={styles.button}>Add</button>
-        <hr />
       </form>
     )
   }

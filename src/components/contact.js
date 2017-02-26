@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { PropTypes } from 'react'
 import Gender from './gender'
 
 const styles = {
@@ -14,24 +14,15 @@ const styles = {
   }
 }
 
-export default class Contact extends Component {
-
-  componentWillMount() {
-    console.log('Contact will mount.')
-  }
-
-  render() {
-    const { firstName, lastName, age, gender } = this.props
-
-    return(
-      <li style={styles.listItem}>
-      <span style={styles.span}><Gender gender={gender} /></span>
-        <span style={styles.span}>{`Firstname: ${firstName}`}</span>
-        <span style={styles.span}>{`Lastname: ${lastName}`}</span>
-        <span style={styles.span}>{`Age: ${age}`}</span>
-      </li>
-    )
-  }
+const Contact = ({firstName, lastName, age, gender}) => {
+  return(
+    <li style={styles.listItem}>
+    <span style={styles.span}><Gender gender={gender} /></span>
+      <span style={styles.span}>{`Firstname: ${firstName}`}</span>
+      <span style={styles.span}>{`Lastname: ${lastName}`}</span>
+      <span style={styles.span}>{`Age: ${age}`}</span>
+    </li>
+  )
 }
 
 Contact.propTypes = {
@@ -40,3 +31,5 @@ Contact.propTypes = {
   lastName: PropTypes.string.isRequired,
   age: PropTypes.number.isRequired
 }
+
+export default Contact

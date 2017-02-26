@@ -1,18 +1,6 @@
 import React, { PropTypes } from 'react'
-import Gender from './gender'
-
-const styles = {
-  listItem: {
-    border: '1px solid gray',
-    fontSize: '16px',
-    listStyleType: 'none',
-    marginTop: '10px',
-    padding: '10px',
-  },
-  span: {
-    marginLeft: '20px',
-  }
-}
+import Gender from '../Gender'
+import styles from './styles'
 
 const Contact = ({firstName, lastName, age, gender}) => {
   return(

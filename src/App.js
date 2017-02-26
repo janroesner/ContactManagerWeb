@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ContactsContainer from './containers/contacts-container'
+import ContactsContainer from './containers/ContactsContainer'
 import classnames from 'classnames/bind'
 import styles from './App.css'
 

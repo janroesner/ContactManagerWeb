@@ -1,18 +1,6 @@
 import React, { Component } from 'react'
-import Contact from './contact'
-
-const styles = {
-  list: {
-    marginTop: '50px',
-  },
-  ul: {
-    left: 0,
-    margin: '0 auto',
-    maxWidth: '50%',
-    padding: 0,
-    right: 0,
-  }
-}
+import Contact from '../Contact'
+import styles from './styles'
 
 export default class ContactsList extends Component {
 

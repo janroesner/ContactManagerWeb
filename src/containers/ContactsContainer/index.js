@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import ContactForm from '../components/contact-form'
-import ContactsList from '../components/contacts-list'
+import ContactForm from '../../components/ContactForm'
+import ContactsList from '../../components/ContactsList'
+import initialData from './data'
 
 export default class ContactsContainer extends Component {
 
@@ -14,31 +15,7 @@ export default class ContactsContainer extends Component {
   }
 
   // you can set initial(!!) state like so, or do it in the constructor
-  state = {
-    contacts: [
-      {
-        id: 1,
-        firstName: 'Hillary',
-        lastName: 'Clinton',
-        age: 57,
-        gender: 'f'
-      },
-      {
-        id: 2,
-        firstName: 'Donald',
-        lastName: 'Duck',
-        age: 76,
-        gender: 'm'
-      },
-      {
-        id: 3,
-        firstName: 'Donald',
-        lastName: 'Trump',
-        age: 76,
-        gender: 'm'
-      }
-    ]
-  }
+  state = initialData
 
   addContact(contact) {
     // first create a copy of contacts

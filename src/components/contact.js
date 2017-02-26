@@ -6,12 +6,12 @@ export default class Contact extends Component {
     const { firstName, lastName, age, gender } = this.props
 
     return(
-      <div>
+      <li>
         <span><Gender gender={gender} /> - </span>
         <span>{`Firstname: ${firstName}`} - </span>
         <span>{`Lastname: ${lastName}`} - </span>
         <span>{`Age: ${age}`}</span>
-      </div>
+      </li>
     )
   }
 }

@@ -3,14 +3,41 @@ import Contact from './components/contact'
 
 class App extends Component {
   render() {
+    const { store } = this.props
+
     return (
       <div className="App">
-        <Contact firstName='Hillary' lastName='Clinton' age={57} gender='f' />
-        <Contact firstName='Donald' lastName='Duck' age={76} gender='m' />
-        <Contact firstName='Donald' lastName='Trump' age={99} gender='m' />
+        {store.map(contact => {
+          return(
+            <Contact {...contact} />
+          )
+        })}
       </div>
     );
   }
+}
+
+App.defaultProps = {
+  store: [
+    {
+      firstName: 'Hillary',
+      lastName: 'Clinton',
+      age: 57,
+      gender: 'f'
+    },
+    {
+      firstName: 'Donald',
+      lastName: 'Duck',
+      age: 76,
+      gender: 'm'
+    },
+    {
+      firstName: 'Donald',
+      lastName: 'Trump',
+      age: 76,
+      gender: 'm'
+    }
+  ]
 }
 
 export default App

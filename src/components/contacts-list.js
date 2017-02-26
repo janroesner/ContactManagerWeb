@@ -15,6 +15,11 @@ const styles = {
 }
 
 export default class ContactsList extends Component {
+
+  componentWillReceiveProps(nextProps) {
+    console.log('ContactList#componentWillReceiveProps: ', nextProps)
+  }
+
   render() {
     const { contacts } = this.props
 

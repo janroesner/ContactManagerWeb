@@ -15,6 +15,11 @@ const styles = {
 }
 
 export default class Contact extends Component {
+
+  componentWillMount() {
+    console.log('Contact will mount.')
+  }
+
   render() {
     const { firstName, lastName, age, gender } = this.props
 

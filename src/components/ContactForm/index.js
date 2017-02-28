@@ -7,6 +7,7 @@ export default class ContactForm extends Component {
     super(props)
 
     this.onAddContact = this.onAddContact.bind(this)
+    this.toBeUnitTested = this.toBeUnitTested.bind(this)
   }
 
   onAddContact(e) {
@@ -22,6 +23,12 @@ export default class ContactForm extends Component {
     this.props.addContact(newContact)
     this.form.reset()
     this.firstNameInput.focus()
+  }
+
+  toBeUnitTested(input) {
+    if (typeof(input) === 'number') { return input + 1}
+
+    return -1
   }
 
   render() {

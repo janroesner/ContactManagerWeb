@@ -23,6 +23,7 @@
     "watch": "jest --watch",
     "coverage": "jest --coverage",
     "cover-watch": "jest --coverage --watch",
+    "snapshot": "jest -u",
     "eject": "react-scripts eject"
   }
 }
